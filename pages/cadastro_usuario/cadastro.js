@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Formulário válido. Enviando...");
             limparCampos();
             armazenaCadastros(email); // Aqui estou usando o email como identificador único, você pode ajustar conforme necessário
-            window.location.href = "index copy.html";
+            window.location.href = "login.html";
         } else if (validacao === false) {
             alert("Por favor, preencha todos os campos do formulário corretamente!");
         } else if (validacao === 0) {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("voltar").onclick = function() {
-        window.location.href = "index copy.html";
+        window.location.href = "login.html";
     };
     
 });

@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("loginForm").addEventListener("submit", function (event) {
+    document.getElementById("login-form").addEventListener("submit", function (event) {
         event.preventDefault();
         var email = document.getElementById("email").value;
-        var senha = document.getElementById("senha").value;
+        var senha = document.getElementById("password").value; // Corrigido de "senha" para "password"
+
 
         var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
         var usuario = usuarios.find(function (user) {
@@ -16,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             document.getElementById("loginMessage").textContent = "Email ou senha incorretos. Tente novamente.";
             // Redirecionar para a página de cadastro
-            window.location.href = "index.html";
+            window.location.href = "cadastro.html";
         }
      
     });
     
-    document.getElementById("cadastro").onclick = function() {
-        window.location.href = "index.html";
+    document.getElementById("register").onclick = function() {
+        window.location.href = "cadastro.html";
     };   
 });
