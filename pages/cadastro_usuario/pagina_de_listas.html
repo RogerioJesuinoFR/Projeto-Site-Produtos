@@ -1,17 +1,22 @@
-<!-- Hebert e Igor a página de crud da lista e itens será a página principal do site, onde 
-o usuário irá criar listas de compras e tudo mais. Além disso, a página deverá ser linkada
-com a página de login, caso o usuário queira sair da sua conta -->
-
-<!-- Felipe e Igor a parte de CRUD de itens da lista provavelmente também será na página principal-->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="pagina_de_listas.css">
+<title>Lista de Listas</title>
 </head>
 <body>
-    <h1>Página de listas</h1>
+<div class="container">
+    <h2>Lista de Listas</h2>
+    <label for="new-list">Nova Lista:</label>
+    <input type="text" id="new-list" placeholder="Nome da Lista">
+    <button onclick="listManager.addList()">Adicionar Lista</button>
+
+    <ul id="lists">
+    </ul>
+</div>
+
+<script src="pagina_de_listas.js"></script>
 </body>
 </html>
