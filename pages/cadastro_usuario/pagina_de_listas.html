@@ -7,11 +7,19 @@
 <title>Lista de Listas</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="login.html">Deslogar</a></li>
+            </ul>
+        </nav>
+    </header>
 <div class="container">
-    <h2>Lista de Listas</h2>
-    <label for="new-list">Nova Lista:</label>
+    <h2>Listas</h2>
+    <label for="new-list">Nova lista:</label>
     <input type="text" id="new-list" placeholder="Nome da Lista">
-    <button onclick="listManager.addList()">Adicionar Lista</button>
+    <button onclick="listManager.addList()">Adicionar lista</button>
+
 
     <ul id="lists">
     </ul>
